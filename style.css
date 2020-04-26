@@ -1,0 +1,110 @@
+body {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  h1{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: royalblue
+  }
+
+  p{
+      color: darkblue;
+      font-size: larger;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  #chat1{
+    color: blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  #chat2{
+    color: blue;
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+  img{
+    width: 60px;
+    height: 60px;
+  }
+  
+
+  .balloon-set-box {
+    display: flex;
+    background-color:lightblue;
+    width: auto;
+  }
+
+  .balloon-set-box.left { 
+    flex-direction: row;
+  }
+
+  .balloon-set-box.right { 
+    flex-direction: row-reverse; 
+  }
+
+
+ .balloon {
+    position: relative; 
+    display: inline-block; 
+    background-color: aquamarine; 
+    text-align: justify; 
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 10px 30px 30px; 
+    padding: 10px 15px; 
+  }
+  
+  .balloon::after {
+    content: '';
+    border: 15px solid transparent;
+    border-top-color: aquamarine;
+    position: absolute;
+    top: 0;
+
+  }
+  .left .balloon::after {
+    left: -10px;
+  }
+
+  .right .balloon::after { 
+    right: -10px;
+  }
+  
+  .icon-box {
+    border-radius: 80%;  
+    width: 60px;
+    height: 60px;
+    box-shadow: 7px black;
+    border: 3px groove gainsboro;
+    overflow: hidden;
+  }
+  
+
+  .balloon:hover>.time-right{
+    display: block;
+
+  }
+
+  .balloon:hover>.time-left{
+    display: block;
+
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+
+  .hidden {
+      display: none;
+  }
